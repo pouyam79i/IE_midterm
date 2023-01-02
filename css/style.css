@@ -1,0 +1,128 @@
+*{
+    background-color: #000000;
+}
+
+
+.container {
+
+} 
+
+.submitbox{
+    border-radius: 25px;
+    background-color: #bf0000;
+    width: 15%;
+    height: 80%;
+    padding: 10px;
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    margin: -25px 0 0 -25px;
+    align-items: center;
+}   
+
+.submitbox label{
+    background-color:rgba(176, 224, 230, 0);
+    font-weight: bold;
+
+}
+.submitbox input{
+    margin-top: 10px;
+    background-color:rgb(255, 255, 255);
+    width: 60%;
+}
+.submitbox button{
+    margin-top: 10px;
+    width: 70px;
+    background-color: #000000;
+    -webkit-text-fill-color: white;
+    text-align: center;
+}
+.submitbox img{
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+    position: absolute;
+    top: 80%;
+    left: 30%;
+    border-radius: 50%;
+    background-color: #fc000000;
+}
+
+.infobox{
+    border-radius: 25px;
+    background-color: #bf0000;
+    width: 45%;
+    height: 80%;
+    padding: 10px;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    margin: -25px 0 0 -40px;
+}
+
+.avatar{
+    vertical-align: middle;
+    width: 200px;
+    height: 200px;
+    padding: 1px;
+    position: absolute;
+    margin-top: 2%;
+    left: 36%;
+    border-radius: 50%;
+}
+
+.profilename{
+    background-color:rgba(176, 224, 230, 0);
+    text-align: center;
+    margin-top: 32%;
+}
+
+.details{
+    background-color:rgba(176, 224, 230, 0);
+    font-size: 25px;
+    margin-top: 5%;
+    text-align: left;
+}
+
+/* Changing above properties for width less than 800px or hight less then 600 */
+@media only screen and ((max-width: 800px) or (max-height: 600px)) {
+    .submitbox{
+        border-radius: 25px;
+        background-color: #bf0000;
+        width: 20%;
+        height: 80%;
+        padding: 10px;
+        position: absolute;
+        top: 10%;
+        left: 75%;
+        margin: -25px 0 0 -25px;
+    }    
+    .infobox{
+        border-radius: 25px;
+        background-color: #bf0000;
+        width: 55%;
+        height: 80%;
+        padding: 10px;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        margin: -25px 0 0 -40px;
+    }
+    .avatar{
+        vertical-align: middle;
+        width: 120px;
+        height: 120px;
+        padding: 1px;
+        position: absolute;
+        margin-top: 5%;
+        left: 35%;
+        border-radius: 50%;
+    
+    
+    }
+}
+
+
+  
+
