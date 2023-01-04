@@ -74,16 +74,14 @@ function updateInfoUI(jsonObj){
     if(jsonObj.email != null && jsonObj.email != ""){
         if(infoExists){
             userInfo += " - ";
-            infoExists = false;
         }
-        userInfo += jsonObj.email + "";
+        userInfo += "<a>" + jsonObj.email + "</a>";
     }
     if(jsonObj.type == "Organization"){
         if(infoExists){
             userInfo += " - ";
-            // infoExists = false;
         }
-        userInfo += "This is an organization account!";
+        userInfo += "<a>" + "This is an organization account!" + "</a>";
     }
     document.getElementById("userInfo").innerHTML = userInfo;
 
