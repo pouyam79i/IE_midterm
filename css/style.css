@@ -63,6 +63,12 @@
     left: 15%;
     margin: -25px 0 0 -40px;
 }
+.infobox b{
+    background-color: #bf000000;
+}
+.infobox a{
+    background-color: #bf000000;
+}
 
 .avatar{
     vertical-align: middle;
