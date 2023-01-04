@@ -1,15 +1,12 @@
-*{
-    background-color: #000000;
+/* contains page background image */
+*{ 
+    background-color: #c8d8e4 ;
 }
 
-
-.container {
-
-} 
-
+/* this is the style of submition form container - right box*/
 .submitbox{
     border-radius: 25px;
-    background-color: #bf0000;
+    background-color: #2b6777 ;
     width: 15%;
     height: 80%;
     padding: 10px;
@@ -20,23 +17,31 @@
     align-items: center;
 }   
 
+/* Style of lables in submitbox */
 .submitbox label{
+    -webkit-text-fill-color: #c8d8e4;
     background-color:rgba(176, 224, 230, 0);
     font-weight: bold;
 
 }
+
+/* style of input form in submitbox */
 .submitbox input{
     margin-top: 10px;
     background-color:rgb(255, 255, 255);
     width: 60%;
 }
+
+/* style of buttons in submitbox */
 .submitbox button{
     margin-top: 10px;
     width: 70px;
-    background-color: #000000;
-    -webkit-text-fill-color: white;
+    background-color: #c8d8e4 ;
+    -webkit-text-fill-color: #2b6777;
     text-align: center;
 }
+
+/* style of image submitbox - octocat positioning! */
 .submitbox img{
     vertical-align: middle;
     width: 100px;
@@ -48,13 +53,18 @@
     border-radius: 50%;
     background-color: #fc000000;
 }
+
+/* style of paragrapg in submitbox - error stat text */
 .submitbox p{
+    -webkit-text-fill-color: #c8d8e4;
     background-color: #00000000;
 }
 
+/* info box is the main container for all profile details! this is the left box */
 .infobox{
+    -webkit-text-fill-color: #c8d8e4;
     border-radius: 25px;
-    background-color: #bf0000;
+    background-color: #2b6777 ;
     width: 45%;
     height: 80%;
     padding: 10px;
@@ -63,13 +73,25 @@
     left: 15%;
     margin: -25px 0 0 -40px;
 }
+
+/* Bolds style of infobox */
 .infobox b{
     background-color: #bf000000;
 }
+
+/* link style of infobox */
 .infobox a{
     background-color: #bf000000;
+    text-decoration: none;
+    -webkit-text-fill-color: #ffffff ;
 }
 
+/* header2 style in infobox */
+.infobox h2{
+    margin-top: 32%;
+}
+
+/* style of profile image is definde here */
 .avatar{
     vertical-align: middle;
     width: 200px;
@@ -81,24 +103,32 @@
     border-radius: 50%;
 }
 
+/* Still of profile name is defined here. it must be below of profile image*/
 .profilename{
     background-color:rgba(176, 224, 230, 0);
     text-align: center;
     margin-top: 32%;
 }
 
+/* Style of details about user is defind here */
 .details{
     background-color:rgba(176, 224, 230, 0);
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 5%;
     text-align: left;
 }
 
-/* Changing above properties for width less than 800px or hight less then 600 */
+/* Footer thag must always stay at the bottom of page */
+.footer{
+    position: fixed;
+    bottom: 0;
+    height: 20px;   /* Height of the footer */
+}
+
+/* Changing above positioning properties for width less than 800px or hight less then 600 */
 @media only screen and ((max-width: 800px) or (max-height: 600px)) {
     .submitbox{
         border-radius: 25px;
-        background-color: #bf0000;
         width: 20%;
         height: 80%;
         padding: 10px;
@@ -106,10 +136,21 @@
         top: 10%;
         left: 75%;
         margin: -25px 0 0 -25px;
-    }    
+    }  
+
+    .submitbox img{
+        vertical-align: middle;
+        width: 70px;
+        height: 70px;
+        padding: 0;
+        position: absolute;
+        top: 85%;
+        left: 30%;
+        border-radius: 50%;
+    }  
+
     .infobox{
         border-radius: 25px;
-        background-color: #bf0000;
         width: 55%;
         height: 80%;
         padding: 10px;
@@ -117,7 +158,18 @@
         top: 10%;
         left: 10%;
         margin: -25px 0 0 -40px;
+    } 
+
+    .infobox h2{
+        margin-top: 35%;
     }
+
+    .details{
+        font-size: 19px;
+        margin-top: 5%;
+        text-align: left;
+    }   
+
     .avatar{
         vertical-align: middle;
         width: 120px;
@@ -126,12 +178,6 @@
         position: absolute;
         margin-top: 5%;
         left: 35%;
-        border-radius: 50%;
-    
-    
+        border-radius: 50%;  
     }
 }
-
-
-  
-
