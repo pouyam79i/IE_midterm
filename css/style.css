@@ -48,6 +48,9 @@
     border-radius: 50%;
     background-color: #fc000000;
 }
+.submitbox p{
+    background-color: #00000000;
+}
 
 .infobox{
     border-radius: 25px;

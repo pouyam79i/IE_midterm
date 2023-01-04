@@ -7,7 +7,7 @@
 
     <!-- Importing Style and JS -->
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>  
     
     <title>Git Info</title>
 </head>
@@ -18,22 +18,21 @@
         <!-- Submit box -->
         <div  class="submitbox">
             <label>Username : </label>   
-            <input type="text" placeholder="Enter Username" name="username" required>  
-            <button type="button" class="cancelbtn"> Submit</button>  
-            <img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" alt="">
+            <input type="text" placeholder="Enter Username" name="username" id="username" required>  
+            <button type="button" class="cancelbtn" onclick="submitBtn()"> Submit</button>  
+            <img src="assets/octocat.png" alt="">
+            <p id="errorStatus">error status</p>
         </div>
 
         <!-- Info box -->
         <div  class="infobox">
             <!-- Image box -->
-            <img src="https://avatars.githubusercontent.com/u/8181240?v=4" alt="" class="avatar">
+            <img src="/assets/no-image.jpg" alt="" class="avatar" id="userImg">
             <!-- Profile info -->
-            <h2 class="profilename">Parham Alvani</h2>
+            <h2 class="profilename" id="userFullName">Full Name</h2>
             <!-- Personal info type -->
-            <div class="details">
-                location: Tehran <br>
-                Companys: Snap<br>
-                Bio: Backend Developer <br> Happy and Smiling
+            <div class="details" id="userInfo">
+                User information
             </div>
         </div>
 
